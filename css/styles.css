@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'ProximaNova';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+       url('../fonts/ProximaNova-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/ProximaNova-Black.woff2') format('woff2'),
+       url('../fonts/ProximaNova-Black.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+  url('../fonts/ProximaNova-Bold.woff') format('woff');
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  padding: 0;
+  margin: 0;
+  margin-top: 59px;
+  font-family: "Proxima Nova", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #222;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1148px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-right: auto;
+  margin-left: auto;
+}
