@@ -38,7 +38,6 @@ html {
 body {
   padding: 0;
   margin: 0;
-  margin-top: 59px;
   font-family: "Proxima Nova", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -63,9 +62,169 @@ img {
 }
 
 .container {
-  max-width: 1148px;
-  padding-left: 24px;
-  padding-right: 24px;
+  max-width: 1170px;
   margin-right: auto;
   margin-left: auto;
 }
+
+.main-header {
+  padding: 30px 0;
+  background-color: #222;
+  color: #fff;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+  width: 139px;
+  height: 37px;
+}
+
+.scedule {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scedule p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.scedule p:nth-child(2) {
+  font-weight: 300;
+}
+
+.nav-contacts {
+  display: flex;
+  align-items: center;
+}
+
+.numbers {
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.nav-contacts a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.numbers a:nth-child(2) {
+  margin-top: 10px;
+}
+
+/* MAIN */
+.hero {
+  background-image: url("../img/track.png");
+  background-position: center center;
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-content {
+  width: 460px;
+  padding: 60px;
+  background-color: #f7b516;
+}
+
+.hero-heading {
+  padding-right: 80px;
+}
+
+.hero-content h1 {
+  margin: 0;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.hero-heading p {
+  font-size: 20px;
+  font-weight: 600;
+  padding-right: 20px;
+  margin: 30px 0;
+}
+
+.feautures-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.feautures-list li {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-top: 30px;
+}
+
+.feautures-list li::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-right: 20px;
+}
+
+.feautures-list p {
+  margin: 0;
+  display: flex;
+}
+
+
+.btn {
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  padding: 15px 25px;
+  background-color: #1669b3;
+  text-transform: uppercase;
+  border: none;
+  color: #fff;
+}
+
+.mail {
+  display: flex;
+}
+
+.mail-wrapper::before {
+  content: "";
+  display: inline-block;
+  width: 400px;
+  height: 300px;
+  background-color: #ccc;
+  /* margin-right: 20px; */
+}
+
+.mail-wrapper {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+
+
+
+
+
+
