@@ -179,11 +179,29 @@ img {
 .feautures-list li::before {
   content: "";
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #ccc;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
   margin-right: 20px;
+  background-repeat: no-repeat;
+}
+
+.feautures-list li:nth-child(1)::before {
+  background-image: url("../img/piggy-bank.png");
+  width: 35px;
+  height: 30px;
+}
+
+.feautures-list li:nth-child(2)::before {
+  background-image: url("../img/delivery-truck-silhouette.png");
+}
+
+.feautures-list li:nth-child(3)::before {
+  background-image: url("../img/election-event-on-a-calendar-with-star-symbol.png");
+}
+
+.feautures-list li:nth-child(4)::before {
+  background-image: url("../img/medal.png");
 }
 
 .feautures-list p {
@@ -205,8 +223,11 @@ img {
 }
 
 .mail {
-  margin-top: 100px;
-  margin-bottom: 50px;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background-image: url("../img/big-track.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .mail-wrapper {
@@ -217,7 +238,7 @@ img {
 
 .mail-wrapper-inner h2 {
   margin: 0;
-  width: 530px;
+  width: 550px;
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -239,6 +260,16 @@ img {
 
 .mail-form input:nth-child(1) {
   margin-right: 30px;
+  background-image: url("../img/mail.png");
+  background-repeat: no-repeat;
+  background-position: right 30px top 50%;
+
+}
+
+.mail-form input:nth-child(2) {
+  background-image: url("../img/call-answer.png");
+  background-repeat: no-repeat;
+  background-position:  right 30px top 50%;
 }
 
 .mail-form input::placeholder {
@@ -268,10 +299,12 @@ img {
 .paragraph-wrapper::after {
   content: "";
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #ccc;
+  width: 57px;
+  height: 35px;
+  background-image: url("../img/clock.png");
+  background-size: cover;
+  background-position: -0.5px 0;
+  background-repeat: no-repeat;
   margin-left: 20px;
 }
 
@@ -284,7 +317,6 @@ img {
 .steps {
   background-color: #08243e;
   color: #fff;
-  margin-top: 80px;
   padding: 50px 0;
 }
 
@@ -337,12 +369,35 @@ img {
 .steps-list p::before {
   content: "";
   display: inline-block;
-  width: 150px;
-  height: 150px;
-  background-color: #ccc;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center center;
   margin-bottom: 30px;
 }
 
+.steps-list li:nth-child(1) p::before {
+  background-image: url("../img/engine.png");
+}
+
+.steps-list li:nth-child(2) p::before {
+  background-image: url("../img/dump-truck.png");
+}
+
+.steps-list li:nth-child(3) p::before {
+  background-image: url("../img/calendar\ \(5\).png");
+}
+
+.steps-list li:nth-child(4) p::before {
+  background-image: url("../img/dump-truck.png");
+}
+
+
+
+.numbers + a {
+  font-size: 12px;
+  padding: 20px 20px;
+}
 
 
 
