@@ -318,6 +318,7 @@ img {
   background-color: #08243e;
   color: #fff;
   padding: 50px 0;
+  border-bottom: 1px solid rgba(160, 158, 158, 0.7);
 }
 
 .steps-heading {
@@ -474,6 +475,121 @@ p.phone {
   margin-top: 0;
 }
 
+.save {
+  padding: 50px 0;
+}
 
+.save h2, .sale h2 {
+  font-size: 30px;
+  max-width: 683px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
 
+.save-list {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
 
+.save-list li {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.save-list li::before {
+  content: "";
+  display: inline-block;
+  width: 200px;
+  height: 250px;
+  background-size: cover;
+}
+
+.save-list li:nth-child(1)::before {
+  background-image: url("../img/document.png");
+}
+
+.save-list li:nth-child(2)::before {
+  background-image: url("../img/Слой\ 21.png");
+}
+
+.save-list li:nth-child(3)::before {
+  background-image: url("../img/Слой\ 22.jpg");
+}
+
+.save-list li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.save-list li a {
+  color: #000;
+  margin-top: 20px;
+}
+
+.sale {
+  padding: 50px 0;
+  background-color: #08243e;
+  color: #fff;
+  border-bottom: 1px solid rgba(160, 158, 158, 0.7);
+}
+
+.sale-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.sale-list li {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+}
+
+.sale-list li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.sale-list p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sale-list p::before {
+  content: "";
+  display: inline-block;
+  padding: 25px 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  width: 80px;
+  height: 80px;
+}
+
+.sale-list li:nth-child(1) p::before {
+  content: "10%";
+}
+
+.sale-list li:nth-child(2) p::before {
+  content: "20%";
+}
+
+.sale-list li:nth-child(3) p::before {
+  background-image: url("../img/delivery-truck\ \(4\).png");
+  background-size: 40px 25px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.sale-list li:nth-child(4) p::before {
+  background-image: url("../img/telemarketer.png");
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
