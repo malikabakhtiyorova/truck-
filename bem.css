@@ -1,0 +1,132 @@
+
+.section__container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  margin-top: 300px;
+}
+
+.wrapper__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card {
+  width: 100%;
+  background-color: #ccc;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.foods__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.card__img {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card__content {
+  margin: 30px 0 20px 0;
+}
+
+.text__heading {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.text__span {
+  font-size: 15px;
+}
+
+.text__price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.amount__price {
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.amount__counter {
+  display: flex;
+  align-items: center;
+}
+
+.count__plus-btn, .count__minus-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.add__img, .minus__img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.card__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  padding: 0px 15px;
+  background-color: tomato;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.btn__img {
+  width: 20px;
+  height: 20px;
+}
+
+.btn__text {
+  font-size: 15px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "New";
+  position: absolute;
+  top: 3%;
+  left: -25%;
+  transform: rotate(-45deg);
+  display: inline-block;
+  width: 150px;
+  height: 15px;
+  background-color: green;
+  padding: 10px;
+  color: #fff;
+}
+
+.card__content {
+  position: relative;
+}
+
+
+.card__content::before {
+  content: "!";
+  position: absolute;
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: rgb(241, 40, 40);
+  color: #fff;
+  border-radius: 50%;
+  top: -140px;
+  right: 0;
+}
+

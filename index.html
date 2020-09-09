@@ -216,8 +216,18 @@
                                   <li>
                                     <a href="#">Как заказать деталь правильно?</a>
                                   </li>
-                                  <li>
+                                  <li class="has-dropdown">
                                     <a href="#">Что делать, если запчасть не понадобилась?</a>
+                                    <div class="dropdown">
+                                      <div class="dropdown-inner">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <button href="#">
+                                          <img src="img/Прямоугольник_9.svg" alt="close">
+                                        </button>
+                                      </div>
+
+                                       <p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>
                                   </li>
                                   <li>
                                     <a href="#">Что делать, если запчасть не понадобилась?</a>
@@ -231,7 +241,13 @@
                                 </ol>
                                 <a class="reload" href="#">Еще вопросы</a>
                               </div>
+                             <figure class="figure">
                               <img src="img/office.jpg" width="450" height="400" alt="office">
+                              <figcaption>
+                                <p>Эдуард Викторович,</p>
+                               <p> Директор ООО "Eddie`s-Car"</p>
+                              </figcaption>
+                             </figure>
                             </div>
 
                           </div>
@@ -240,7 +256,7 @@
                         <section class="delivery">
                           <div class="container">
                             <h2>С нами удобно работать! </h2>
-                            <p>Более 70% клиентов приходят к нам по рекомендации!</p>
+                            <p class="questions-header">Более 70% клиентов приходят к нам по рекомендации!</p>
 
                             <ul class="delivery-list">
                               <li>
@@ -264,10 +280,10 @@
                           </div>
                         </section>
 
-                        <section class="store">
+                        <section class="store any-questions">
                           <div class="container">
                             <h2>У нас собственный склад!</h2>
-                            <p>Это позволяет нам быстро обрабатывать запросы и отгружать детали
+                            <p class="questions-header store-header-p">Это позволяет нам быстро обрабатывать запросы и отгружать детали
                               в день заказа!
                               </p>
 
@@ -316,12 +332,14 @@
                         <section class="consultation">
                           <div class="container">
                             <h2>Если Вам необходима бесплатная консультация по вопросу обслуживания</h2>
-                            <p>Звоните нам по телефону: </p>
-                            <p> +7 (818) 247-47-25</p>
+                            <div class="phone-number">
+                              <p>Звоните нам по телефону: </p>
+                              <p> +7 (818) 247-47-25</p>
+                            </div>
 
-                            <form action="https://echo/htmlacademy.ru">
+                            <form class="phone-form" action="https://echo/htmlacademy.ru">
 
-                              <input class="phone" type="text" placeholder="Введите ваш телефон">
+                              <input class="call-input" name="phone" placeholder="Введите ваш телефон" type="text">
                               <button type="submit">Перезвонить сейчас</button>
                             </form>
                           </div>
@@ -331,12 +349,12 @@
                           <div class="container">
                             <h2>Приезжайте в наш офис!</h2>
                             <p>г. Архангельск, Москва-Сити, оф. 3725</p>
-                            <p>+7 (818) 247-47-25</p>
+                            <p class="number">+7 (818) 247-47-25</p>
                           </div>
                         </section>
 
                         <section class="location">
-                          <a href="#">
+                          <a href="https://g.page/najottalim?share" target="_blank">
                             <img src="img/map.jpg" alt="map">
                           </a>
                         </section>
@@ -344,24 +362,21 @@
                       </main>
 
 
-                        <footer class="main-header">
+                        <footer class="main-footer">
                           <div class="container">
-                            <div class="header-wrapper">
+                            <div class="footer-wrapper">
                               <img class="logo" src="img/logo.jpg" alt="logo" width="139" height="37">
-                              <div class="scedule">
+                              <div class="patron">
                                 <p>© 2016, CДЕЛАНО С </p>
                                 <p> КОМАНДОЙ</p>
-                                <p>без выходных</p>
                                 <img src="img/logo.png" alt="">
                               </div>
 
-                              <div class="nav-contacts">
-                                <div class="numbers">
+                              <div class="footer-contacts">
+
                                   <p>Есть вопросы? Звоните!</p>
-                                <a href="tel:+7 (818) 247-47-25
-                                ">+7 (818) 247-47-25
-                              </a>
-                            </div>
+                                <a href="tel:+7 (818) 247-47-25">+7 (818) 247-47-25</a>
+
                           </div>
 
                         </div><!--  end of header-wrapper -->
